@@ -14,71 +14,83 @@
       <input type="text" id="name" name="name">
       <button type="submit" id="start">Start Questionaire</button>
     </form><br><br>
-    <p class="hidden1">How confident are you with your language and math skills? </p>
-    <form action="question1" class="hidden1">
-      <input type="radio" id="q1Radio1" name="q1Radio" value="1">
-      <label for="radioOne">1. Slightly.</label>
-      <input type="radio" id="q1Radio2" name="q1Radio" value="2">
-      <label for="radioOne">2. Kinda.</label>
-      <input type="radio" id="q1Radio3" name="q1Radio" value="3">
-      <label for="radioOne">3. Maybe.</label>
-      <input type="radio" id="q1Radio4" name="q1Radio" value="4">
-      <label for="radioOne">4. Yeah.</label>
-      <input type="radio" id="q1Radio5" name="q1Radio" value="5">
-      <label for="radioOne">5. Definitely</label><br>
-      <button name="button" id="q1Next">next</button>
-    </form>
-    <p class="hidden2">What types of software are you familiar with?</p>
-    <form action="question2" class="hidden2">
-      <input type="checkbox" id="q2Check1">
-      <label for="q2Check1">Web Applications</label>
-      <input type="checkbox" id="q2Check2">
-      <label for="q2Check2">Mobile Apps</label>
-      <input type="checkbox" id="q2Check3">
-      <label for="q2Check3">Server/Data Management</label>
-      <input type="checkbox" id="q2Check4">
-      <label for="q2Check4">Data Analytics</label>      
-      <input type="checkbox" id="q2Check5">
-      <label for="q2Check5">Finance/Billing</label>
-      <input type="checkbox" id="q2Check6">
-      <label for="q2Check6">Spreadsheets</label><br>
-      <button name="button" id="q2Next">next</button>
-    </form>
-    <p class="hidden3">Do you prefer:</p>
-    <form action="question3" class="hidden3">
+    <div class="hidden1">
+      <p>How confident are you with your language and math skills?</p>
+      <form id="question1">
+        <input type="radio" id="q1Radio1" name="q1Radio" value="1">
+        <label for="radioOne">1. Slightly.</label>
+        <input type="radio" id="q1Radio2" name="q1Radio" value="2">
+        <label for="radioOne">2. Kinda.</label>
+        <input type="radio" id="q1Radio3" name="q1Radio" value="3">
+        <label for="radioOne">3. Maybe.</label>
+        <input type="radio" id="q1Radio4" name="q1Radio" value="4">
+        <label for="radioOne">4. Yeah.</label>
+        <input type="radio" id="q1Radio5" name="q1Radio" value="5">
+        <label for="radioOne">5. Definitely</label><br>
+        <button name="button" id="q1Next">next</button>
+      </form>
+    </div>
+    <div class="hidden2">
+      <p>What types of software are you familiar with?</p>
+      <form id="question2">
+        <input type="checkbox" id="q2Check1">
+        <label for="q2Check1">Web Applications</label>
+        <input type="checkbox" id="q2Check2">
+        <label for="q2Check2">Mobile Apps</label>
+        <input type="checkbox" id="q2Check3">
+        <label for="q2Check3">Server/Data Management</label>
+        <input type="checkbox" id="q2Check4">
+        <label for="q2Check4">Data Analytics</label>      
+        <input type="checkbox" id="q2Check5">
+        <label for="q2Check5">Finance/Billing</label>
+        <input type="checkbox" id="q2Check6">
+        <label for="q2Check6">Spreadsheets</label><br>
+        <button name="button" id="q2Next">next</button>
+      </form>
+  </div>
+    <div class="hidden3">
+    <p>Do you prefer:</p>
+    <form id="question3">
       <input type="radio" id="q3Radio1" name="q3Radio" value="?">
       <label for="radioOne">Big challenge</label>
       <input type="radio" id="q3Radio2" name="q3Radio" value="?">
       <label for="radioOne">Straight forward</label><br>
       <button name="button" id="q3Next">next</button>
     </form>
-    <p class="hidden4">Do you prefer:</p>
-    <form action="question4" class="hidden4">
-      <input type="radio" id="q4Radio1" name="q4Radio" value="1">
-      <label for="radioOne">A set of tools that work for everything.</label>
-      <input type="radio" id="q4Radio2" name="q4Radio" value="2">
-      <label for="radioOne">Specialized tools that work really well.</label>
-      <input type="radio" id="q4Radio3" name="q4Radio" value="3">
-      <label for="radioOne">Tools easy to use and readily available.</label>
-      <input type="radio" id="q4Radio4" name="q4Radio" value="4"><br>
-      <button name="button" id="q3Next">next</button>
-    </form>
-    <p class="hidden5">Question 5</p>
-    <form action="question5">
-      <input type="radio" id="q5Radio1" name="q5Radio" value="1">
-      <label for="radioOne">Web Development</label>
-      <input type="radio" id="q5Radio2" name="q5Radio" value="2">
-      <label for="radioOne">Data analytics</label>
-      <input type="radio" id="q5Radio3" name="q5Radio" value="3">
-      <label for="radioOne">Software Development</label>
-      <input type="radio" id="q5Radio4" name="q5Radio" value="4">
-      <label for="radioOne">Software Development</label>
-      <input type="radio" id="q5Radio5" name="q5Radio" value="5">
-      <label for="radioOne">Database management</label><br>
-      <button name="button" id="q3Next">next</button>
-    </form>
-    <h2 class="hidden6"><span class="name",></span></h2>
-    <p class="hidden6">The coding language I suggest is ...<span id="answer"></span></p>
-    <button class="hidden6" id="reset">Reset</button>
+    </div>
+    <div class="hidden4">
+      <p>Do you prefer:</p>
+      <form id="question4">
+        <input type="radio" id="q4Radio1" name="q4Radio" value="1">
+        <label for="radioOne">A set of tools that work for everything.</label>
+        <input type="radio" id="q4Radio2" name="q4Radio" value="2">
+        <label for="radioOne">Specialized tools that work really well.</label>
+        <input type="radio" id="q4Radio3" name="q4Radio" value="3">
+        <label for="radioOne">Tools easy to use and readily available.</label>
+        <input type="radio" id="q4Radio4" name="q4Radio" value="4"><br>
+        <button name="button" id="q3Next">next</button>
+      </form>
+    </div>
+    <div class="hidden5">
+      <p>Question 5</p>
+      <form id="question5">
+        <input type="radio" id="q5Radio1" name="q5Radio" value="1">
+        <label for="radioOne">Web Development</label>
+        <input type="radio" id="q5Radio2" name="q5Radio" value="2">
+        <label for="radioOne">Data analytics</label>
+        <input type="radio" id="q5Radio3" name="q5Radio" value="3">
+        <label for="radioOne">Software Development</label>
+        <input type="radio" id="q5Radio4" name="q5Radio" value="4">
+        <label for="radioOne">Software Development</label>
+        <input type="radio" id="q5Radio5" name="q5Radio" value="5">
+        <label for="radioOne">Database management</label><br>
+        <button name="button" id="q3Next">next</button>
+      </form>
+    </div>
+    <div class="hidden6" >
+      <h2><span class="name",></span></h2>
+      <p>The coding language I suggest is ...<span id="answer"></span></p>
+      <button id="reset">Reset</button>
+    </div>
   </body>
 </html>
