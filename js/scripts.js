@@ -2,43 +2,49 @@ function removeHiddenOne(event) {
   event.preventDefault();
   console.log("Is this working?");
   let showQ1 = document.getElementById("question1");
-  showQ1.setAttribute("class", "")
+  showQ1.setAttribute("class", "");
 }
 
 function removeHiddenTwo(event) {
   event.preventDefault();
   console.log("Is this working?");
   let showQ2 = document.getElementById("question2");
-  showQ2.setAttribute("class", "")
+  showQ2.setAttribute("class", "");
 }
 
 function removeHiddenThree(event) {
   event.preventDefault();
   console.log("Is this working?");
   let showQ3 = document.getElementById("question3");
-  showQ3.setAttribute("class", "")
+  showQ3.setAttribute("class", "");
 }
 
 function removeHiddenFour(event) {
   event.preventDefault();
   console.log("Is this working?");
   let showQ4 = document.getElementById("question4");
-  showQ4.setAttribute("class", "")
+  showQ4.setAttribute("class", "");
 }
 
 function removeHiddenFive(event) {
   event.preventDefault();
   console.log("Is this working?");
   let showQ5 = document.getElementById("question5");
-  showQ5.setAttribute("class", "")
+  showQ5.setAttribute("class", "");
 }
 
 function removeHiddenSix(event) {
   event.preventDefault();
   console.log("Is this working?");
   let finalAnswer = document.getElementById("answer");
-  finalAnswer.setAttribute("class", "")
+  finalAnswer.setAttribute("class", "");
+  let getName = document.getElementById("name").value;
+  let namePlacement = document.getElementById("showname");
+  nameHolder.innerText(namePlacement);
 }
+
+
+
 
 window.addEventListener("load", function(){
   const startButton = document.getElementById("start");
