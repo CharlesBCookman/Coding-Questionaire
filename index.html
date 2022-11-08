@@ -3,7 +3,7 @@
   <head>
     <title>Coding Questionaire</title>
     <link href="../css/styles.css" rel="stylesheet" type="text/css">
-    <link src="../js/scripts.js">
+    <script src="../js/scripts.js"></script>
   </head>
   <body>
     <h1>Coding Questionaire</h1>
@@ -11,7 +11,7 @@
     <h2>First we would like your name.</h2><br>
     <form>
       <label for="name">Name or Nickname:</label>
-      <input type="text" id="name" name="name">
+      <input type="text" id="name" value="Your name here">
       <button type="submit" id="start">Start Questionaire</button>
     </form><br><br>
     <div id="question1" class="hidden1">
@@ -83,12 +83,12 @@
         <label for="q5radio4">Software Development</label>
         <input type="radio" id="q5radio5" name="q5radio" value="5">
         <label for="q5radio5">Database management</label><br>
-        <button name="button" id="q4next">next</button>
+        <button name="button" id="q5next">next</button>
       </form>
     </div>
     <div id="answer" class="hidden6">
       <h2><span class="name",></span></h2>
-      <p>The coding language I suggest is ...<span id="answer"></span></p>
+      <p>The coding language I suggest is ...<span id="showanswer"></span></p>
       <button id="reset">Reset</button>
     </div>
   </body>
