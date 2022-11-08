@@ -39,8 +39,12 @@ function removeHiddenSix(event) {
   let finalAnswer = document.getElementById("answer");
   finalAnswer.setAttribute("class", "");
   let getName = document.getElementById("name").value;
-  let namePlacement = document.getElementById("showname");
-  nameHolder.innerText(namePlacement);
+  document.getElementById("showname").innerText = getName;
+  let firstValue = document.getElementsByTagName("input");  let secondValue = 0
+  return firstValue;
+  let thirdValue = 0
+  let fourthValue = 0
+  let fifthValue = 0
 }
 
 
