@@ -40,12 +40,16 @@ function removeHiddenSix(event) {
   finalAnswer.setAttribute("class", "");
   let getName = document.getElementById("name").value;
   document.getElementById("showname").innerText = getName;
-  let firstValue = document.getElementsByTagName("input");  let secondValue = 0
-  return firstValue;
-  let thirdValue = 0
-  let fourthValue = 0
-  let fifthValue = 0
-}
+  let firstValue = document.getElementsByTagName("input");  let secondValue = 0;
+  let returnedValue = "";
+  let questionaireResult = firstValue.forEach(element => {
+    returnedValue =+ element; 
+    let Javascript = parseInt(returnedValue.count("j"));
+    let Ruby = parseInt(returnedValue.count("r"));
+    let Python = parseInt(returnedValue.count("p"));
+    let cLanguage = parseInt(returnedValue.count("c"));
+    let largestValue = Math.max() 
+    
 
 
 
