@@ -34,7 +34,7 @@ function removeHiddenOne(event) {
 function removeHiddenTwo(event) {
   event.preventDefault();
   const inputThree = document.getElementById("radio3");
-  const labelThree = documen.getElementById("label3");
+  const labelThree = document.getElementById("label3");
   inputThree.className = "show";
   labelThree.className = "show";
 }
@@ -191,114 +191,115 @@ function checkAnswer(answer) {
   if(radioThree.checked = true) {
     answer = radioThree.value;
   }
+  console.log(answer)
 }
 
 function answersTree(event) {
   event.preventDefault();
   checkAnswer(answer);
-  if(answers = "q1a1"){
+  if(answer = "q1a1"){
     questionTwo;
   }
-  if(answers = "q1a2"){
+  if(answer = "q1a2"){
     questionThree;
   }
-  if(answers = "q2a1"){
+  if(answer = "q2a1"){
     questionFour
   }
-  if(answers = "q2a2"){
+  if(answer = "q2a2"){
     questionFive;
   }
-  if(answers.value = "q2a3"){
+  if(answer = "q2a3"){
     questionSix;
   }
-  if(answers.value = "q3a1"){
+  if(answer = "q3a1"){
     questionFour;
   }
-  if(answers.value = "q3a2"){
+  if(answer = "q3a2"){
     questionFive;
   }
-  if(answers.value = "q3a3"){
+  if(answer = "q3a3"){
     questionSix;
   }
-  if(answers.value = "q4a1"){
+  if(answer = "q4a1"){
     questionSeven;
   }
-  if(answers.value = "q4a2"){
+  if(answer = "q4a2"){
     questionEight;
   }
-  if(answers.value = "q4a3"){
+  if(answer = "q4a3"){
     questionNine;
   }
-  if(answers.value = "q5a1"){
+  if(answer = "q5a1"){
     questionSeven;
   }
-  if(answers.value = "q5a2"){
+  if(answer = "q5a2"){
     questionEight;
   }
-  if(answers.value = "q5a3"){
+  if(answer = "q5a3"){
     questionNine;
   }
-  if(answers.value = "q6a1"){
+  if(answer = "q6a1"){
     questionSeven;
   }
-  if(answers.value = "q6a2"){
+  if(answer = "q6a2"){
     questionEight;
   }
-  if(answers.value = "q6a3"){
+  if(answer = "q6a3"){
     questionNine;
   }
-  if(answers.value = "q7a1"){
+  if(answer = "q7a1"){
     questionTen
   }
-  if(answers.value = "q7a2"){
+  if(answer = "q7a2"){
     questionEleven
   }
-  if(answers.value = "q7a3"){
+  if(answer = "q7a3"){
     questionTwelve
   }
-  if(answers.value = "q8a1"){
+  if(answer = "q8a1"){
     questionTen
   }
-  if(answers.value = "q8a2"){
+  if(answer = "q8a2"){
     questionEleven
   }
-  if(answers.value = "q8a3"){
+  if(answer = "q8a3"){
     questionTwelve
   }
-  if(answers.value = "q9a1"){
+  if(answer = "q9a1"){
     questionTen
   }
-  if(answers.value = "q9a2"){
+  if(answer = "q9a2"){
     questionEleven
   }
-  if(answers.value = "q9a3"){
+  if(answer = "q9a3"){
     questionTwelve
   }
-  if(answers.value = "q10a1"){
+  if(answer = "q10a1"){
 
   }
-  if(answers.value = "q10a2"){
+  if(answer = "q10a2"){
 
   }  
-  if(answers.value = "q10a3"){
+  if(answer = "q10a3"){
 
   }
-  if(answers.value = "q11a1"){
+  if(answer = "q11a1"){
 
   }
-  if(answers.value = "q11a2"){
+  if(answer = "q11a2"){
 
   }  
-  if(answers.value = "q11a3"){
+  if(answer = "q11a3"){
 
   }
-  if(answers.value = "q12a1"){
+  if(answer = "q12a1"){
 
   }
-  if(answers.value = "q12a2"){
+  if(answer = "q12a2"){
 
   }  
-  if(answers.value = "q12a3"){
+  if(answer = "q12a3"){
 
   }
   else{
@@ -309,5 +310,5 @@ window.addEventListener("load", function(){
   const startButton = document.getElementById("start");
   startButton.addEventListener("click", removeHiddenOne);
   const nextButton = document.getElementById("next-button");
-  nextButton.addEventListener("click", answersTree);
+  nextButton.addEventListener("click", removeHiddenTwo);
 });
