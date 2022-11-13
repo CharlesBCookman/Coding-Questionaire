@@ -37,6 +37,7 @@ function removeHiddenTwo(event) {
   const labelThree = document.getElementById("label3");
   inputThree.className = "show";
   labelThree.className = "show";
+  console.log("is ths working?")
 }
 
 function removeHiddenThree(event) {
@@ -191,6 +192,9 @@ function checkAnswer(answer) {
   if(radioThree.checked = true) {
     answer = radioThree.value;
   }
+  else {
+    alert("broken")
+  }
   console.log(answer)
 }
 
@@ -310,5 +314,5 @@ window.addEventListener("load", function(){
   const startButton = document.getElementById("start");
   startButton.addEventListener("click", removeHiddenOne);
   const nextButton = document.getElementById("next-button");
-  nextButton.addEventListener("click", removeHiddenTwo);
+  nextButton.addEventListener("click", removeHiddenTwo, answersTree);
 });
