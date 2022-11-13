@@ -1,23 +1,21 @@
+body {
+  text-align: center;
+}
+
+.questions-scren {
+  display: flex;
+  width: 80%;
+  height: 80%;
+}
+
 .hidden1 {
-  display:none;
+  display: none;
 }
 
 .hidden2 {
-  display:none;
+  display: none;
 }
 
 .hidden3 {
-  display:none;
-}
-
-.hidden4 {
-  display:none;
-}
-
-.hidden5 {
-  display:none;
-}
-
-.hidden6 {
-  display:none;
+  display: none;
 }
