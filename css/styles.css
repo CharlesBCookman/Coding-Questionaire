@@ -1,9 +1,15 @@
 body {
   text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80");
+  background-position: center;
+  background-size: cover;
+  color: white;
 }
 
-.questions-screen {
-
+div {
+  background-color: black;
+  border-color: darkblue;
+  
 }
 
 .hidden1 {
@@ -15,5 +21,45 @@ body {
 }
 
 .hidden3 {
+  display: none;
+}
+
+.hidden4 {
+  display: none;
+}
+
+.hidden5 {
+  display: none;
+}
+
+.hidden6 {
+  display: none;
+}
+
+.hidden7 {
+  display: none;
+}
+
+.hidden8 {
+  display: none;
+}
+
+.hidden9 {
+  display: none;
+}
+
+.hidden10 {
+  display: none;
+}
+
+.hidden11 {
+  display: none;
+}
+
+.hidden12 {
+  display: none;
+}
+
+.hidden13 {
   display: none;
 }

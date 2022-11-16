@@ -1,294 +1,364 @@
-function removeHiddenOne(event) {
-  event.preventDefault();
-  console.log("is this working")
-  const hiddenOne = document.getElementById("questions-area");
-  hiddenOne.className = "questions-screen";
+function questionOne() {
+  const hiddenOne = document.getElementById("question1area");
+  const hiddenTwo = document.getElementById("question2area");
 }
 
-function removeHiddenTwo(event) {
-  event.preventDefault();
-  const inputThree = document.getElementById("radio3");
-  const labelThree = document.getElementById("label3");
-  inputThree.className = "show";
-  labelThree.className = "show";
-  console.log("is ths working?")
+function questionTwo() {
+  const hiddenTwo = document.getElementById("question2area");
 }
 
-function removeHiddenThree(event) {
-  event.preventDefault();
-  const showAnswerArea = document.getElementById("answer");
-  showAnswerArea.className = "show";
+function questionThree() {
+  const hiddenOne = document.getElementById("question1area");
+  const hiddenThree = document.getElementById("question3area");
 }
 
-function showAnswer(event) {
-  event.preventDefault();
-  let name = document.getElementById("name").innerText;
-  const namePlace = document.getElementById("showname");
+function questionFour() {
+
 }
 
+function questionFive() {
 
-function finalAnswers(event) {
-  event.preventDefault();
+}
+
+function questionSix() {
+  
+}
+function questionSeven() {
+  
+}
+
+function questionEight() {
+  
+}
+
+function questionNine() {
+  
+}
+
+function questionTen() {
+  
+}
+
+function questionEleven() {
+  
+}
+
+function questionTwelve() {
+
 }
 
 function answersTree(event) {
   event.preventDefault();
-  let answer;
-  answer = document.querySelector("input[name='radio']:checked").value;
-  console.log(answer)
-  const questionText = document.getElementById("questions-text").innerText;
-  const radioOne = document.getElementById("radio1").value;
-  const radioTwo = document.getElementById("radio2").value;
-  const radioThree = documen.getElementById("radio3").value;
-  const labelOne = getElementById("label1").innertext;
-  const labelTwo = getElementById("label2").inntertext;
-  const labelThree = getElementById("label3").inntertext;
 
-  function questionTwo() {
-    //question2
-    radioOne = "q2a1"
-    radioTwo = "q2a2"
-    radioThree = "q2a3"
-    questionText = "2. Which do you prefer:"
-    labelOne = "Problem solving and/or logic problems."
-    labelTwo = "Beautiful things or things that run smooth?"
-    labelThree = "Complex things that require thought and analysis?"
-  }
-  function questionThree() {
-    //questio3
-    radioOne = "q3a1";
-    radioTwo = "q3a2";
-    radioThree = "q3a3";
-    questionText = "Which do you prefer:";
-    labelOne = "Word/Logic problems/puzzles.";
-    labelTwo = "Writing and reading beautiful literature.";
-    labelThree = "Analyzing, and/or editing.";
-}
+  const hiddenTwo = document.getElementById("question2area");
+  const hiddenThree = document.getElementById("question3area");
+  const hiddenFour = document.getElementById("question4area");
+  const hiddenFive = document.getElementById("question5area");
+  const hiddenSix = document.getElementById("question6area");
+  const hiddenSeven = document.getElementById("question7area");
+  const hiddenEight = document.getElementById("question8area");
+  const hiddenNine = document.getElementById("question9area");
+  const hiddenTen = document.getElementById("question10area");
+  const hiddenEleven = document.getElementById("question11area");
+  const hiddenTwelve = document.getElementById("question12area");
+  const hiddenThirteen = document.getElementById("answer");
+  let answerValue1 = document.querySelector("input[name='q1radio']:checked").value;
+  let answerValue2 = document.querySelector("input[name='q2radio']:checked").value;
+  let answerValue3 = document.querySelector("input[name='q3radio']:checked").value;
+  const answerValue4 = document.querySelector("input[name='q4radio']:checked").value;
+  const answerValue5 = document.querySelector("input[name='q5radio']:checked").value;
+  const answerValue6 = document.querySelector("input[name='q6radio']:checked").value;
+  const answerValue7 = document.querySelector("input[name='q7radio']:checked").value;
+  const answerValue8 = document.querySelector("input[name='q8radio']:checked").value;
+  const answerValue9 = document.querySelector("input[name='q9radio']:checked").value;
+  const answerValue10 = document.querySelector("input[name='q10radio']:checked").value;
+  const answerValue11 = document.querySelector("input[name='q11radio']:checked").value;
+  const answerValue12 = document.querySelector("input[name='q12radio']:checked").value;
+  const finalAnswer = document.getElementById("showanswer");
 
-  function questionFour() {
-    //question4
-    radioOne = "q4a1";
-    radioTwo = "q4a2";
-    radioThree = "q4a3";
-    questionText = "When you problem solve, do you…";
-    labelOne = "Like a big challenge.";
-    labelTwo = "Enjoy thinking through your options.";
-    labelThree = "Do it quickly so you can move on to the next one.";
+  if(answerValue1 = "q1a1"){
+    //option1
+    console.log("is q1a1 working");
+    hiddenOne.className = "hidden1";
+    hiddenTwo.className = "show";
   }
 
-  function questionFive() {
-    //question5
-    radioOne = "q5a1";
-    radioTwo = "q5a2";
-    radioThree = "q5a3";
-    questionText = "Do you like…";;
-    labelOne = "Complex work with contradictions.";
-    labelTwo = "Approachable work without ambiguity.";
-    labelThree = "Fast paced work with plenty reference material.";
+  else if(answerValue1 === "q1a2"){
+    //option2
+    console.log("is q1a2 working");
+    hiddenOne.className = "hidden1";
+    hiddenThree.className = "show";
   }
 
-  function questionSix() {
-    //question6
-    radioOne = "q6a1";
-    radioTwo = "q6a2";
-    radioThree = "q6a3";
-    questionText = "Would you rather…";
-    labelOne = "Learn software stuff.";
-    labelTwo = "Learn internet stuff.	";
-    labelThree = "Learn a lot of stuff.";
+  else if(answerValue2 === "q2a1"){
+    //option3
+    console.log("is q2a1 working");
+    hiddenTwo.className = "hidden2";
+    hiddenFour.className = "show";
   }
 
-  function questionSeven() {
-    //question7
-    radioOne = "q7a1";
-    radioTwo = "q7a2";
-    radioThree = "q7a3";
-    questionText = "Do you prefer Mac or PC’s";
-    labelOne = "Mac";
-    labelTwo = "PC’s";
-    labelThree = "Both";
+  else if(answerValue2 === "q2a2"){
+    //option5
+    console.log("is q2a2 working");
+    hiddenTwo.className = "hidden2";
+    hiddenFive.className = "show";
   }
 
-  function questionEight() {
-    //question8
-    radioOne = "q8a1";
-    radioTwo = "q8a2";
-    radioThree = "q8a3";
-    questionText = "Do you prefer tools that…";
-    labelOne = "Work really easily and quickly.";
-    labelTwo = "Do a lot of things.";
-    labelThree = "Are really good at what they do.";
+  else if(answerValue2 === "q2a3"){
+    //option6
+    console.log("is q2a3 working");
+    hiddenTwo.className = "hidden2";
+    hiddenSix.className = "show";
   }
 
-  function questionNine() {
-    //question9
-    radioOne = "q9a1";
-    radioTwo = "q9a2";
-    radioThree = "q9a3";
-    questionText = "Are you a...";
-    labelOne = "Fast paced get it done kinda person.";
-    labelTwo = "I like a good challenge I can spend some time on.";
-    labelThree = "What ever it is bring it on kinda person.";
-  }
-  
-  function questionTen() {
-    //question10
-    radioOne = "q10a1";
-    radioTwo = "q10a2";
-    radioThree = "q10a3";
-    questionText = "Would you rather work on…";
-    labelOne = "Servers.";
-    labelTwo = "Functionality and data analytics kinda stuff.";
-    labelThree = "A mix of everything.";
+  else if(answerValue3 === "q3a1"){
+    //option7
+    console.log("is q3a1 working");
+    hiddenThree.className = "hidden3";
+    hiddenFour.className = "show";
   }
 
-  function questionEleven() {
-    //question11
-    radioOne = "q11a1";
-    radioTwo = "q11a2";
-    radioThree = "q11a3";
-    questionText = "Would you rather work on…";
-    labelOne = "Servers or windows software.";
-    labelTwo = "Functionality and data analytics kinda stuff.";
-    labelThree = "A mix of everything.";
+  else if(answerValue3 === "q3a2"){
+    //option8
+    console.log("is q3a2 working");
+    hiddenThree.className = "hidden3";
+    hiddenFive.className = "show";
   }
 
-  function questionTwelve() {
-    //question12
-    radioOne = "q12a1";
-    radioTwo = "q12a2";
-    radioThree = "q12a3";
-    questionText = "Windows servers and software.";
-    labelOne = "Servers or windows software.";
-    labelTwo = "Work with servers and build back end functionality.";
-    labelThree = "A lot of everything.";
+  else if(answerValue3 === "q3a3"){
+    //option9
+    console.log("is q3a3 working");
+    hiddenThree.className = "hidden3";
+    hiddenSix.className = "show";
   }
 
-  if(answer = "q1a1"){
-      //question2
-    removeHiddenTwo;
-    questionTwo;
+  else if(answerValue4 === "q4a1"){
+    //option10
+    console.log("is q4a1 working");
+    hiddenFour.className = "hidden4";
+    hiddenSeven.className = "show";
   }
-  if(answer = "q1a2"){
-    //question3
-    removeHiddenTwo;
-    questionThree;
 
-    
+  else if(answerValue4 === "q4a2"){
+    //option11
+    console.log("is q4a2 working");
+    hiddenFour.className = "hidden4";
+    hiddenEight.className = "show";
   }
-  if(answer = "q2a1"){
-    questionFour;
 
+  else if(answerValue4 === "q4a3"){
+    //option12
+    console.log("is q4a3 working");
+    hiddenFour.className = "hidden4";
+    hiddenNine.className = "show";
   }
-  if(answer = "q2a2"){
 
+  else if(answerValue5 === "q5a1"){
+    //option13
+    console.log("is q5a1 working");
+    hiddenFive.className = "hidden5";
+    hiddenSeven.className = "show";
   }
-  if(answer = "q2a3"){
-    //question6
-    questionSix;
-  }
-  if(answer = "q3a1"){
-    //question7
-    questionFour;
-  }
-  if(answer = "q3a2"){
-    //question8
-    questionFive;
-  }
-  if(answer = "q3a3"){
-    //question9
-    questionSix;
-  }
-  if(answer = "q4a1"){
-    questionSeven;
-  }
-  if(answer = "q4a2"){
-    questionEight;
-  }
-  if(answer = "q4a3"){
-    questionNine;
-  }
-  if(answer = "q5a1"){
-    questionSeven;
-  }
-  if(answer = "q5a2"){
-    questionEight;
-  }
-  if(answer = "q5a3"){
-    questionNine;
-  }
-  if(answer = "q6a1"){
-    questionSeven;
-  }
-  if(answer = "q6a2"){
-    questionEight;
-  }
-  if(answer = "q6a3"){
-    questionNine;
-  }
-  if(answer = "q7a1"){
-    questionTen
-  }
-  if(answer = "q7a2"){
-    questionEleven
-  }
-  if(answer = "q7a3"){
-    questionTwelve
-  }
-  if(answer = "q8a1"){
-    questionTen
-  }
-  if(answer = "q8a2"){
-    questionEleven
-  }
-  if(answer = "q8a3"){
-    questionTwelve
-  }
-  if(answer = "q9a1"){
-    questionTen
-  }
-  if(answer = "q9a2"){
-    questionEleven
-  }
-  if(answer = "q9a3"){
-    questionTwelve
-  }
-  if(answer = "q10a1"){
 
+  else if(answerValue5 === "q5a2"){
+    //option14
+    console.log("is q5a2 working");
+    hiddenFive.className = "hidden5";
+    hiddenEight.className = "show";
   }
-  if(answer = "q10a2"){
 
+  else if(answerValue5 === "q5a3"){
+    //option15
+    console.log("is q5a3 working");
+    hiddenFive.className = "hidden5";
+    hiddenNine.className = "show";
+  }
+
+  else if(answerValue6 === "q6a1"){
+    //option16
+    console.log("is q6a1 working");
+    hiddenSix.className = "hidden6";
+    hiddenSeven.className = "show";
+  }
+
+  else if(answerValue6 === "q6a2"){
+    //option17
+    console.log("is q6a2 working");
+    hiddenSix.className = "hidden6";
+    hiddenEight.className = "show";
+  }
+
+  else if(answerValue6 === "q6a3"){
+    //option18
+    console.log("is q6a3 working");
+    hiddenSix.className = "hidden6";
+    hiddenNine.className = "show";
+  }
+
+  else if(answerValue7 === "q7a1"){
+    //option19
+    console.log("is q7a1 working");
+    hiddenSeven.className = "hidden7";
+    hiddenTen.className = "show";
+  }
+
+  else if(answerValue7 === "q7a2"){
+    //option20
+    console.log("is q7a2 working");
+    hiddenSeven.className = "hidden7";
+    hiddenEleven.className = "show";
+  }
+
+  else if(answerValue7 === "q7a3"){
+    //option21
+    console.log("is q7a3 working");
+    hiddenSeven.className = "hidden7";
+    hiddenTwelve.className = "show";
+  }
+
+  else if(answerValue8 === "q8a1"){
+    //option22
+    console.log("is q8a1 working");
+    hiddenEight.className = "hidden8";
+    hiddenTen.className = "show";
+  }
+
+  else if(answerValue8 === "q8a2"){
+    //option23
+    console.log("is q8a2 working");
+    hiddenEight.className = "hidden8";
+    hiddenEleven.className = "show";
+  }
+
+  else if(answerValue8 === "q8a3"){
+    //option24
+    console.log("is q8a3 working");
+    hiddenEight.className = "hidden8";
+    hiddenTwelve.className = "show";
+  }
+
+  else if(answerValue9 === "q9a1"){
+     //option25
+     console.log("is q9a1 working");
+     hiddenNine.className = "hidden9";
+     hiddenTen.className = "show";
+  }
+
+  else if(answerValue9 === "q9a2"){
+     //option26
+     console.log("is q9a2 working");
+     hiddenNine.className = "hidden9";
+     hiddenEleven.className = "show";
+  }
+
+  else if(answerValue9 === "q9a3"){
+     //option27
+     console.log("is q9a3 working");
+     hiddenNine.className = "hidden9";
+     hiddenTwelve.className = "show";
+  }
+
+  else if(answerValue10 === "q10a1"){
+    finalAnswer.innerText = "Ruby";
+    console.log("is q10a1 working");
+    hiddenTen.className = "hidden10";
+    hiddenThirteen.className = "show";
+  }
+
+  else if(answerValue10 === "q10a2"){
+    finalAnswer.innerText = "Python";
+    console.log("is q10a2 working");
+    hiddenTen.className = "hidden10";
+    hiddenThirteen.className = "show";
   }  
-  if(answer = "q10a3"){
 
+  else if(answerValue10 === "q10a3"){
+    finalAnswer.innerText = "JavaScript";
+    console.log("is q10a3 working");
+    hiddenTen.className = "hidden10";
+    hiddenThirteen.className = "show";
   }
-  if(answer = "q11a1"){
 
+  else if(answerValue11 === "q11a1"){
+    finalAnswer.innerText = "C#";
+    console.log("is q11a1 working");
+    hiddenEleven.className = "hidden11";
+    hiddenThirteen.className = "show";
   }
-  if(answer = "q11a2"){
 
+  else if(answerValue11 === "q11a2"){
+    finalAnswer.innerText = "Python";
+    console.log("is q11a2 working");
+    hiddenEleven.className = "hidden11";
+    hiddenThirteen.className = "show";
   }  
-  if(answer = "q11a3"){
 
+  else if(answerValue11 === "q11a3"){
+    finalAnswer.innerText = "JavaScript";
+    console.log("is q11a3 working");
+    hiddenEleven.className = "hidden11";
+    hiddenThirteen.className = "show";
   }
-  if(answer = "q12a1"){
 
+  else if(answerValue12 === "q12a1"){
+    finalAnswer.innerText = "C#";
+    console.log("is q12a1 working");
+    hiddenTwelve.className = "hidden12";
+    hiddenThirteen.className = "show";
   }
-  if(answer = "q12a2"){
 
+  else if(answerValue12 === "q12a2"){
+    finalAnswer.innerText = "Python";
+    console.log("is q12a2 working");
+    hiddenTwelve.className = "hidden12";
+    hiddenThirteen.className = "show";
   }  
-  if(answer = "q12a3"){
 
+  else if(answerValue12 === "q12a3"){
+    finalAnswer.innerText = "JavaScript";
+    console.log("is q12a3 working");
+    hiddenTwelve.className = "hidden12";
+    hiddenThirteen.className = "show";
   }
-  else{
-    alert("Something went wrong...")
-} }
 
+  else if (true === true){
+    console.log("Something went wrong...");
+}};
 
 
 window.addEventListener("load", function(){
+  const hiddenOne = document.getElementById("question1area");
+  const next1Button = document.getElementById("next1button");
+  const next2Button = document.getElementById("next2button");
+  const next3Button = document.getElementById("next3button");
+  const next4Button = document.getElementById("next4button");
+  const next5Button = document.getElementById("next5button");
+  const next6Button = document.getElementById("next6button");
+  const next7Button = document.getElementById("next7button");
+  const next8Button = document.getElementById("next8button");
+  const next9Button = document.getElementById("next9button");
+  const next10Button = document.getElementById("next10button");
+  const next11Button = document.getElementById("next11button");
+  const next12Button = document.getElementById("next12button");
   const startButton = document.getElementById("start");
+  function removeHiddenOne () {
+    hiddenOne.className = "show";
+  }
+  // console.log(radioOne)
+
   startButton.addEventListener("click", removeHiddenOne);
-  const nextButton = document.getElementById("next-button");
-  nextButton.addEventListener("click", answersTree);
+  next1Button.addEventListener("click", answersTree);
+  next2Button.addEventListener("click", answersTree);
+  next3Button.addEventListener("click", answersTree);
+  next4Button.addEventListener("click", answersTree);
+  next5Button.addEventListener("click", answersTree);
+  next6Button.addEventListener("click", answersTree);
+  next7Button.addEventListener("click", answersTree);
+  next8Button.addEventListener("click", answersTree);
+  next9Button.addEventListener("click", answersTree);
+  next10Button.addEventListener("click", answersTree);
+  next11Button.addEventListener("click", answersTree);
+  next12Button.addEventListener("click", answersTree);
+
 });
+

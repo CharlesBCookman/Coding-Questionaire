@@ -9,24 +9,154 @@
     <h1>Coding Questionaire</h1>
     <p>Can you handle the suspense?</p><br><br>
     <h2>First, your name.</h2><br>
-    <form>
+    <form id="name-area">
       <label for="name">Name or Nickname:</label>
       <input type="text" id="name" value="Your name here">
-      <button type="submit" id="start">Start Questionaire</button>
+      <button type="button" id="start">Start Questionaire</button>
     </form><br><br>
-    <div id="questions-area" class="hidden1">
-      <p class="questions-text">Do you have more experience with technology or language/writing?</p>
-      <form id="radios-area">
-        <input type="radio" id="radio1" name="radio" value="q1a1" checked>
-        <label id="label1" for="radio1">Experience with technology.</label>
-        <input type="radio" id="radio2" name="radio" value="q1a2">
-        <label id="label2" for="radio2">Language and or writing.</label>        
-        <input type="radio" id="radio3" class="hidden2" name="radio" value="">
-        <label id="label3" for="radio3" class="hidden2"></label><br>
-        <button id="next-button" type="button">next</button>   
+    <div id="question1area" class="hidden1">
+      <p class="questions1text">Do you have more experience with technology or language/writing?</p>
+      <form id="radio1area">
+        <input type="radio" id="q1radio1" name="q1radio" value="q1a1">
+        <label id="q1label1" for="q1radio1">Experience with technology.</label>
+        <input type="radio" id="q1radio2" name="q1radio" value="q1a2">
+        <label id="q1label3" for="q1radio3"></label><br>
+        <button id="next1button" type="button">Next</button>   
       </form>
     </div>
-    <div id="answer" class="hidden3"><br>
+    <div id="question2area" class="hidden2">
+      <p class="questions-text">Which do you prefer:</p>
+      <form id="radio2area">
+        <input type="radio" id="q2radio1" name="q2radio" value="q2a1">
+        <label id="q2label1" for="q2radio1">Problem solving and/or logic problems.</label>
+        <input type="radio" id="q2radio2" name="q2radio" value="q2a2">
+        <label id="q2label2" for="q2radio2">Beautiful things or things that run smooth?</label>        
+        <input type="radio" id="q2radio3" name="q2radio" value="q2a3">
+        <label id="q2label3" for="q2radio3">Complex things that require thought and analysis?</label><br>
+        <button id="next2button" type="button">Next</button>   
+      </form>
+    </div>
+    <div id="question3area" class="hidden3">
+      <p class="question3text">"Which do you prefer:"</p>
+      <form id="radio3area">
+        <input type="radio" id="q3radio1" name="q3radio" value="q1a1">
+        <label id="q3label1" for="q3radio1">Word/Logic problems/puzzles.</label>
+        <input type="radio" id="q3radio2" name="q3radio" value="q1a2">
+        <label id="q3label2" for="q3radio2">Writing and reading beautiful literature.</label>        
+        <input type="radio" id="q3radio3" name="q3radio" value="q3a3">
+        <label id="q3label3" for="q3radio3">Analyzing, and/or editing.</label><br>
+        <button id="next3button" type="button">Next</button>   
+      </form>
+    </div>
+    <div id="question4area" class="hidden4">
+      <p class="question4text">"When you problem solve, do you…"</p>
+      <form id="radio4area">
+        <input type="radio" id="q4radio1" name="q4radio" value="q4a1">
+        <label id="q4label1" for="q4radio1">Like a big challenge.</label>
+        <input type="radio" id="q4radio2" name="q4radio" value="q4a2">
+        <label id="q4label2" for="q4radio2">Enjoy thinking through your options.</label>        
+        <input type="radio" id="q4radio3" name="q4radio" value="q4a3">
+        <label id="q4label3" for="q4radio3">Do it quickly so you can move on to the next one.</label><br>
+        <button id="next4button" type="button">Next</button>   
+      </form>
+    </div>
+    <div id="question5area" class="hidden5">
+      <p class="question5text">Do you like…</p>
+      <form id="radio5area">
+        <input type="radio" id="q5radio1" name="q5radio" value="q5a1">
+        <label id="q5label1" for="q5radio1">Complex work with contradictions.</label>
+        <input type="radio" id="q5radio2" name="q5radio" value="q5a2">
+        <label id="q5label2" for="q5radio2">Approachable work without ambiguity.</label>        
+        <input type="radio" id="q5radio3" name="q5radio" value="q5a3">
+        <label id="q5label3" for="q5radio3">Fast paced work with plenty reference material.</label><br>
+        <button id="next5button" type="button">Next</button>   
+      </form>
+    </div>
+    <div id="question6area" class="hidden6">
+      <p class="question6text">Would you rather…</p>
+      <form id="radios6area">
+        <input type="radio" id="q6radio1" name="q6radio" value="q6a1">
+        <label id="q6label1" for="q6radio1">Learn software stuff.</label>
+        <input type="radio" id="q6radio2" name="q6radio" value="q6a2">
+        <label id="q6label2" for="q6radio2">Learn internet stuff.</label>        
+        <input type="radio" id="q6radio3" name="q6radio" value="q6a3">
+        <label id="q6label3" for="q6radio3">Learn a lot of stuff.</label><br>
+        <button id="next6button" type="button">Next</button>   
+      </form>
+    </div>
+    <div id="question7area" class="hidden7">
+      <p class="question7text">Do you prefer Mac or PCs</p>
+      <form id="radio7area">
+        <input type="radio" id="q7radio1" name="q7radio" value="q7a1">
+        <label id="q7label1" for="q7radio1">Mac</label>
+        <input type="radio" id="q7radio2" name="q7radio" value="q7a2">
+        <label id="q7label2" for="q7radio2">PCs</label>        
+        <input type="radio" id="q7radio3" name="q7radio" value="q7a3">
+        <label id="q7label3" for="q7radio3">Both</label><br>
+        <button id="next7button" type="button">Next</button>   
+      </form>
+    </div>
+    <div id="question8area" class="hidden8">
+      <p class="question8text">Do you prefer tools that…</p>
+      <form id="radio8area">
+        <input type="radio" id="q8radio1" name="q8radio" value="q8a1">
+        <label id="q8label1" for="q8radio1">Work really easily and quickly.</label>
+        <input type="radio" id="q8radio2" name="q8radio" value="q8a2">
+        <label id="q8label2" for="q8radio2">Do a lot of things</label>        
+        <input type="radio" id="q8radio3" name="q8radio" value="q8a3">
+        <label id="q8label3" for="q8radio3">Are really good at what they do.</label><br>
+        <button id="next8button" type="button">Next</button>   
+      </form>
+    </div>
+    <div id="question9area" class="hidden9">
+      <p class="question9text">Are you a...</p>
+      <form id="radio9area" class="hidden9">
+        <input type="radio" id="q9radio1" name="q9radio" value="q9a1">
+        <label id="q9label1" for="q9radio1">Fast paced get it done kinda person.</label>
+        <input type="radio" id="q9radio2" name="q9radio" value="q9a2">
+        <label id="q9label2" for="q9radio2">I like a good challenge I can spend some time on.</label>        
+        <input type="radio" id="q9radio3" name="q9radio" value="q9a3">
+        <label id="q9label3" for="q9radio3">What ever it is bring it on kinda person.</label><br>
+        <button id="next9button" type="button">Next</button>   
+      </form>
+    </div>
+    <div id="question10area" class="hidden10">
+      <p class="question10text">Would you rather work on…</p>
+      <form id="radio10area">
+        <input type="radio" id="q10radio1" name="q10radio" value="q10a1">
+        <label id="q10label1" for="q10radio1">Servers.</label>
+        <input type="radio" id="q10radio2" name="q10radio" value="q10a2">
+        <label id="q10label2" for="q10radio2">Functionality and data analytics kinda stuff.</label>        
+        <input type="radio" id="q10radio3" name="q10radio" value="q10a3">
+        <label id="q10label3" for="q10radio3">A mix of everything.</label><br>
+        <button id="next10button" type="button">Next</button>   
+      </form>
+    </div>
+    <div id="question11area" class="hidden11">
+      <p class="question11text">Would you rather work on…</p>
+      <form id="radio11area">
+        <input type="radio" id="q11radio1" name="q11radio" value="q11a1">
+        <label id="q11label1" for="q11radio1">Servers or windows software.</label>
+        <input type="radio" id="q11radio2" name="q11radio" value="q11a2">
+        <label id="q11label2" for="q11radio2">Functionality and data analytics kinda stuff.</label>        
+        <input type="radio" id="q11radio3" name="q11radio" value="q11a3">
+        <label id="q11label3" for="q11radio3">A mix of everything.</label><br>
+        <button id="next11button" type="button">Next</button>   
+      </form>
+    </div>
+    <div id="question12area" class="hidden12">
+      <p class="question12text">Windows servers and software.</p>
+      <form id="radio12area">
+        <input type="radio" id="q12radio1" name="q12radio" value="q12a1">
+        <label id="q12label1" for="q12radio1">Servers or windows software.</label>
+        <input type="radio" id="q12radio2" name="q12radio" value="q12a2">
+        <label id="q12label2" for="q11radio2">Work with servers and build back end functionality.</label>        
+        <input type="radio" id="q12radio3" name="q12radio" value="q12a3">
+        <label id="q12label3" for="q12radio3">A lot of everything.</label><br>
+        <button id="next12button" type="button">Next</button>   
+      </form>
+    </div>
+    <div id="answer" class="hidden13"><br>
       <h2 id="showname"></h2><br>
       <p>The coding language I suggest is ...<span id="showanswer"></span></p>
       <button id="reset">Reset</button>
