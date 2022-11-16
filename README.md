@@ -32,7 +32,7 @@ _{This questionaire checks which language out of C#, Javascript, Ruby, and Pytho
 
 ## License:
 
- MIT License
+MIT License
 
 Copyright (c) 2022, Charles Cookman
 
