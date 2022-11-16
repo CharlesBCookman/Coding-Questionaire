@@ -9,7 +9,11 @@ body {
 div {
   background-color: black;
   border-color: darkblue;
-  
+  border: 5%
+}
+
+.hidden0 {
+  display: none;
 }
 
 .hidden1 {

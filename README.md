@@ -18,7 +18,8 @@ _{This questionaire checks which language out of C#, Javascript, Ruby, and Pytho
 ## Setup/Installation Requirements
 
 * _If you are taking the questionaire all you need to do is use a web browser to take the questionaire._
+* _If you wish to 
 
 ## Known Bugs
 
-* _Unable to get radio buttions return values to work properly so the whole thing doesn't work.
+* _Radio buttons not working correctyly{fixed}_
